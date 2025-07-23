@@ -22,7 +22,7 @@ export default function MathTab() {
   }
 
   return (
-    <div className="w-full h-full bg-[#000000bb] flex flex-row gap-6 p-4">
+    <div className="w-full h-full bg-[#000000dd] flex flex-row gap-6 p-4">
       <div className="w-2/3 h-full flex flex-col gap-6">
         <MathNumberBase setBase={setBase} basearr={basearr} setBasenumbers={setBasenumbers} basenumbers={basenumbers} />
 

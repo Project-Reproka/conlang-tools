@@ -9,7 +9,7 @@ export default function Navbar({ select, selected, titles }) {
     const colorStops = [
       { percent: 0, color: [255, 0, 255, 1] },
       { percent: 50, color: [0, 170, 255, 1] },
-      { percent: 100, color: [0, 255, 0, 1] }
+      { percent: 100, color: [0, 255, 34, 1] }
     ]
 
     percent = Math.max(0, Math.min(100, percent))

@@ -22,7 +22,7 @@ export default function AppContent() {
 
   return (
     <div className="w-screen h-screen flex flex-col">
-      <div className="h-[90%] bg-[linear-gradient(110deg,_#ff00ff_0%,_#00aaff_55%,_#00ff00_100%)]">
+      <div className="h-[90%] bg-[linear-gradient(110deg,_#ff00ff_0%,_#00aaff_55%,_#00ff22_100%)]">
         {selected == 0 ? <span>congratulations, you have reached your destination. {titles[0]} alert. {titles[0]} alert</span> : null}
         {selected == 1 ? <span>congratulations, you have reached your destination. {titles[1]} alert. {titles[1]} alert</span> : null}
         {selected == 2 ? <span>congratulations, you have reached your destination. {titles[2]} alert. {titles[2]} alert</span> : null}
