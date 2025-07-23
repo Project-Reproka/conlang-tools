@@ -5,7 +5,7 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
-      home page wow amazing
+      i do not feel like designing homepages rn ngl
     </div>
   )
 }
