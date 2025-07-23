@@ -1,26 +1,40 @@
 import MathOrderBtn from '@/components/app/tabs/math/mathorderbtn'
 
-export default function MathOrderofOperations({ orders, smallorder, setOrders }) {
-  function handleOrderMvL(lettercombo) {
+export default function MathOrderofOperations({ orders, smallorder, setOrders, setSmallorder }) {
+  function handleOrderMvL(lettercombo, labelsm) {
     var temp = [...orders]
+    var temp2 = [...smallorder]
     var spot = temp.indexOf(lettercombo)
+    var spot2 = temp2.indexOf(labelsm)
     var old = temp[spot-1]
+    var old2 = temp2[spot-1]
 
     temp[spot-1] = lettercombo
     temp[spot] = old
 
+    temp2[spot2-1] = labelsm
+    temp2[spot2] = old2
+
     setOrders(temp)
+    setSmallorder(temp2)
   }
 
-  function handleOrderMvR(lettercombo) {
+  function handleOrderMvR(lettercombo, labelsm) {
     var temp = [...orders]
+    var temp2 = [...smallorder]
     var spot = temp.indexOf(lettercombo)
+    var spot2 = temp2.indexOf(labelsm)
     var old = temp[spot+1]
+    var old2 = temp2[spot+1]
 
     temp[spot+1] = lettercombo
     temp[spot] = old
 
+    temp2[spot2+1] = labelsm
+    temp2[spot2] = old2
+
     setOrders(temp)
+    setSmallorder(temp2)
   }
 
   return (

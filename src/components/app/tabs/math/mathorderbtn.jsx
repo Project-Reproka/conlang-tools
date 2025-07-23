@@ -2,13 +2,13 @@ export default function MathOrderBtn({ label, labelsmall, leftbtnclick, rightbtn
   function leftclick() {
     if (isfirst) return
 
-    leftbtnclick(label)
+    leftbtnclick(label, labelsmall)
   }
 
   function rightclick() {
     if (islast) return
     
-    rightbtnclick(label)
+    rightbtnclick(label, labelsmall)
   }
 
   return (

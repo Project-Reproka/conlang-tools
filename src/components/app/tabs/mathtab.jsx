@@ -6,7 +6,7 @@ import MathCalculator from '@/components/app/tabs/math/mathcalculator'
 
 export default function MathTab() {
   const [ orders, setOrders ] = useState(['p', 'sb', 'cb', 'e', 'm', 'd', 'a', 's'])
-  const smallorder = ['()', '[]', '{}', 'xʸ', '*', '÷', '+', '-']
+  const [ smallorder, setSmallorder] = useState(['()', '[]', '{}', 'xʸ', '*', '÷', '+', '-'])
   const [ base, setBase ] = useState(10)
   const [ basenumbers, setBasenumbers ] = useState(Array(base))
   var basearr = []
@@ -24,10 +24,10 @@ export default function MathTab() {
   return (
     <div className="w-full h-full bg-[#000000dd] flex flex-row gap-6 p-4">
       <div className="w-2/3 h-full flex flex-col gap-6">
-        <MathNumberBase setBase={setBase} basearr={basearr} setBasenumbers={setBasenumbers} basenumbers={basenumbers} />
+        <MathNumberBase setBase={setBase} basearr={basearr} setBasenumbers={setBasenumbers} basenumbers={basenumbers} base={base} />
 
         <div className="w-full h-1/2 flex flex-row gap-6">
-          <MathOrderofOperations orders={orders} smallorder={smallorder} setOrders={setOrders} />
+          <MathOrderofOperations orders={orders} smallorder={smallorder} setSmallorder={setSmallorder} setOrders={setOrders} />
 
           <MathBaseConverter base={base} />
         </div>
