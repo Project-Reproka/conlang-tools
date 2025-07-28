@@ -29,7 +29,7 @@ export default function MathTab() {
         <div className="w-full h-1/2 flex flex-row gap-6">
           <MathOrderofOperations orders={orders} smallorder={smallorder} setSmallorder={setSmallorder} setOrders={setOrders} />
 
-          <MathBaseConverter base={base} />
+          <MathBaseConverter base={base} basenumbers={basenumbers} />
         </div>
       </div>
 

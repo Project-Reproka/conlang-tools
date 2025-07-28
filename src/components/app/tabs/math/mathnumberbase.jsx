@@ -10,7 +10,7 @@ export default function MathNumberBase({ setBase, basearr, setBasenumbers, basen
     { name: 'Binary', base: 2, basenumbers: ['0', '1'] },
     { name: 'Base-4', base: 4, basenumbers: ['0', '1', '2', '3'] },
     { name: 'Octal', base: 8, basenumbers: ['0', '1', '2', '3', '4', '5', '6', '7'] },
-    { name: 'Base-10', base: 10, basenumbers: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] },
+    { name: 'Decimal', base: 10, basenumbers: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] },
     { name: 'Hexadecimal', base: 16, basenumbers: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'] },
     { name: 'Base-20', base: 20, basenumbers: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'] },
     { name: 'Base-32 (RFC 4648)', base: 32, basenumbers: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '2', '3', '4', '5', '6', '7'] },

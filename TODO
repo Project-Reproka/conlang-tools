@@ -1,0 +1,6 @@
+make calculator work
+fix basenumbers setting itself to all default on base change even if its a decrease
+base converter make b10 -> lang convert
+add to phonology ipa keyboard (also extipa and voqs) https://en.m.wikipedia.org/wiki/Extensions_to_the_International_Phonetic_Alphabet and https://en.m.wikipedia.org/wiki/Voice_Quality_Symbols ig
+to lexicon add word root tag system w/ sort thing
+
